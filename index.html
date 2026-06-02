@@ -759,14 +759,7 @@
     100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
   }
 
-  .bday-tag {
-    font-size: 13px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.5rem;
-    animation: fadeIn 0.6s ease 0.2s both;
-  }
+  .bday-tag { display: none; }
 
   .bday-emoji {
     font-size: 2.5rem;
@@ -896,7 +889,6 @@
 <div id="bday-landing">
   <div class="bday-confetti" id="confetti"></div>
 
-  <p class="bday-tag">A gift from Dan & Iris 🎁</p>
   <div class="bday-emoji">🎂</div>
   <h1 class="bday-title">Happy<br><em>Birthday</em></h1>
   <p class="bday-name">Inga</p>
@@ -915,8 +907,6 @@
     We made you a whole study plan. Thursdays. Wine. No tests.<br><br>
     Oh — and your flight is our treat. 🛫
   </p>
-
-  <p class="bday-signed">With love, Dan & Iris</p>
 
   <button class="bday-btn" onclick="revealSite()">Open your gift →</button>
 </div>
