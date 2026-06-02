@@ -928,20 +928,8 @@
 </nav>
 
 <!-- HERO -->
-<div class="hero">
-  <div class="hero-images">
-    <div class="hero-img-grid">
-      <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=1200&q=80"
-           style="object-fit:cover;object-position:center center;width:100%;height:100%;"
-           alt="Art Basel Miami Beach fair floor" />
-      <div class="hero-img-sub">
-        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" alt="Contemporary art installation" />
-        <img src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?w=600&q=80" alt="Art gallery interior" />
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-text">
+<div class="hero" style="grid-template-columns:1fr;">
+  <div class="hero-text" style="max-width:700px;margin:0 auto;">
     <p class="hero-eyebrow">Art Basel Miami Beach · December 2026</p>
     <h1 class="hero-title">Iris<br>& <em>Inga</em><br>Go to<br>Basel.</h1>
     <p class="hero-subtitle">Second time. Different eyes.</p>
@@ -970,7 +958,6 @@
       <div class="scroll-line"></div>
       scroll to explore
     </div>
-  </div>
 </div>
 
 <!-- 2025 HIGHLIGHTS -->
@@ -979,40 +966,12 @@
   <h2 class="section-title">What happened<br>last <em>December</em></h2>
   <p class="section-intro">The 23rd edition of Art Basel Miami Beach brought 283 galleries from 43 countries and over 80,000 visitors. Here's what the art world was talking about.</p>
 
-  <div class="highlights-grid">
-    <div class="hl-item" style="min-height:340px">
+  <div class="highlights-grid" style="grid-template-columns:1fr;grid-template-rows:auto;">
+    <div class="hl-item" style="min-height:300px">
       <img class="hl-img" src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=1200&q=80" alt="Art Basel Miami Beach 2025 fair floor" />
       <div class="hl-caption">
         <div class="hl-caption-title">The fair floor — Miami Beach Convention Center</div>
         <div class="hl-caption-sub">283 galleries · 43 countries · December 3–7, 2025</div>
-      </div>
-    </div>
-    <div class="hl-item">
-      <img class="hl-img" src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=600&q=80" alt="Contemporary installation art" />
-      <div class="hl-caption">
-        <div class="hl-caption-title">Meridians — large-scale installations</div>
-        <div class="hl-caption-sub">The section you can't miss</div>
-      </div>
-    </div>
-    <div class="hl-item">
-      <img class="hl-img" src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=600&q=80" alt="Art gallery booth" />
-      <div class="hl-caption">
-        <div class="hl-caption-title">Gallery booths — Nova sector</div>
-        <div class="hl-caption-sub">Emerging and experimental work</div>
-      </div>
-    </div>
-    <div class="hl-item">
-      <img class="hl-img" src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?w=600&q=80" alt="Contemporary painting" />
-      <div class="hl-caption">
-        <div class="hl-caption-title">Painting remains dominant</div>
-        <div class="hl-caption-sub">From blue-chip to emerging</div>
-      </div>
-    </div>
-    <div class="hl-item">
-      <img class="hl-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Art fair collector" />
-      <div class="hl-caption">
-        <div class="hl-caption-title">240 museum representatives</div>
-        <div class="hl-caption-sub">Plus collectors from 5 continents</div>
       </div>
     </div>
   </div>
@@ -1160,7 +1119,7 @@ const phases = [
       {
         num: "Week 2", name: "Ways of Seeing — ep. 1 & 2", tag: "BBC series",
         vibe: "Watch together — couch, wine, no phones. Berger is provocative in the best way. Free on YouTube. Search 'Ways of Seeing BBC Berger.'",
-        watch: ["Ep 1 — How context changes the meaning of any image", "Ep 2 — The female nude, the male gaze, who art has been made for"],
+        watch: ["<a href='https://www.youtube.com/watch?v=9NWXtTK_Jbo' target='_blank' style='color:var(--gold)'>▶ Ep 1 — How context changes the meaning of any image</a>", "<a href='https://www.youtube.com/watch?v=8wxRxSfhw6I' target='_blank' style='color:var(--gold)'>▶ Ep 2 — The female nude, the male gaze, who art has been made for</a>"],
         learn: [],
         discuss: ["Did ep. 1 make you look at anything differently — even an ad or a photo on your phone?", "Which painting or image in ep. 2 hit you the hardest? Why?", "Do we look at art differently because we're women? How?"],
         game: null
@@ -1168,7 +1127,7 @@ const phases = [
       {
         num: "Week 3", name: "Ways of Seeing — ep. 3 & 4", tag: "BBC series",
         vibe: "These two are the most directly relevant to Art Basel. Ep. 3 is about wealth and ownership — you will never look at a $2M painting the same way.",
-        watch: ["Ep 3 — Oil painting as a display of wealth and ownership (essential for Basel)", "Ep 4 — Advertising as the modern heir to oil painting"],
+        watch: ["<a href='https://www.youtube.com/watch?v=8wxRxSfhw6I' target='_blank' style='color:var(--gold)'>▶ Ep 3 — Oil painting as a display of wealth and ownership (essential for Basel)</a>", "<a href='https://www.youtube.com/watch?v=8wxRxSfhw6I' target='_blank' style='color:var(--gold)'>▶ Ep 4 — Advertising as the modern heir to oil painting</a>"],
         learn: [],
         discuss: ["At Art Basel, when you look at an expensive work — what are you really looking at?", "Can you think of an ad campaign that feels like a painting? Or a painting that feels like an ad?", "Did this change how you feel about wanting to own art?"],
         game: null
@@ -1176,7 +1135,7 @@ const phases = [
       {
         num: "Week 4", name: "Art movements crash course", tag: "YouTube",
         vibe: "Not memorization — just a mental map so nothing feels completely alien. Each of you picks 2 episodes from 'The Art Assignment' on YouTube and shares one thing that surprised you.",
-        watch: ["YouTube: 'The Art Assignment' — pick 4 episodes on movements you don't recognize", "Good starting points: Abstract Expressionism, Pop Art, Conceptual Art, Street Art", "Google Arts & Culture app — browse by movement, take the art personality quiz"],
+        watch: ["<a href='https://www.youtube.com/@theartassignment' target='_blank' style='color:var(--gold)'>▶ The Art Assignment on YouTube — pick 4 episodes on movements you don't recognize</a>", "Good starting points: Abstract Expressionism, Pop Art, Conceptual Art, Street Art", "<a href='https://artsandculture.google.com' target='_blank' style='color:var(--gold)'>▶ Google Arts & Culture — browse by movement, take the art personality quiz</a>"],
         learn: [],
         discuss: ["Which movement made the most sense to you? Which felt like a joke?", "Pick one artist from the videos — would you want their work in your home?", "Is there a movement that feels like it belongs in 2026 more than others?"],
         game: null
@@ -1188,7 +1147,7 @@ const phases = [
       {
         num: "Weeks 5–6", name: "The Price of Everything", tag: "documentary",
         vibe: "This HBO doc is essential. Watch it together in one sitting — 90 minutes and you'll be talking for another hour after. It shows how the money, ego, and art world machinery actually works.",
-        watch: ["'The Price of Everything' — HBO (2018), ~90 min", "Optional: 'Blurred Lines: Inside the Art World' — equally wild follow-up"],
+        watch: ["<a href='https://www.youtube.com/results?search_query=the+price+of+everything+2018+documentary' target='_blank' style='color:var(--gold)'>▶ The Price of Everything — HBO (2018), ~90 min</a>", "Optional: 'Blurred Lines: Inside the Art World' — equally wild follow-up"],
         learn: [],
         discuss: ["Who in the film did you trust? Who felt like a total fraud?", "Is there a difference between art you love and art that's 'important'? Does it matter?", "After watching — does wanting to buy art feel different?"],
         game: null
@@ -1196,7 +1155,7 @@ const phases = [
       {
         num: "Weeks 7–8", name: "The Lonely Palette podcast", tag: "podcast",
         vibe: "One painting per episode, slowly and lovingly analyzed. Perfect for a walk, a drive, or wine on the patio. Start with paintings you've heard of, then get adventurous.",
-        watch: ["Search 'The Lonely Palette' on any podcast app", "Listen to 4 episodes — each of you picks 2", "After each episode, find the painting online and look at it for 2 full minutes before talking"],
+        watch: ["<a href='https://thelonelypalette.com' target='_blank' style='color:var(--gold)'>▶ The Lonely Palette — thelonelypalette.com</a>", "Listen to 4 episodes — each of you picks 2", "After each episode, find the painting online and look at it for 2 full minutes before talking"],
         learn: [],
         discuss: ["Did the analysis make you love the painting more — or did it over-explain it?", "Was there a detail you never would have noticed on your own?", "Which painting from all 4 episodes would you most want to stand in front of?"],
         game: null
@@ -1260,7 +1219,7 @@ const phases = [
       {
         num: "Weeks 16–17", name: "Miami ecosystem", tag: "research",
         vibe: "Art Basel is the center but Miami Art Week is the full experience. One night on satellite fairs, one night on the Miami museums. This is also trip planning — the fun kind.",
-        watch: ["Night 1: Research PAMM, Rubell Museum, Wynwood Walls, The Bass", "Night 2: NADA Art Fair, Untitled Art Fair, Art Miami — browse exhibitor lists", "artbasel.com/stories — read 2–3 artist features together"],
+        watch: ["Night 1: Research PAMM, Rubell Museum, Wynwood Walls, The Bass", "Night 2: NADA Art Fair, Untitled Art Fair, Art Miami — browse exhibitor lists", "<a href='https://www.artbasel.com/stories' target='_blank' style='color:var(--gold)'>▶ artbasel.com/stories — read 2–3 artist features together</a>"],
         learn: ["PAMM (Pérez Art Museum Miami) — strong contemporary, stunning waterfront location", "Rubell Museum — major private collection: Basquiat, Haring, Kusama, and emerging artists", "Wynwood Walls — world's largest outdoor street art museum, free and unmissable", "NADA + Untitled Art Fair — more accessible, emerging artists, often better energy than the main fair"],
         discuss: ["Which satellite fair sounds most like us — NADA or Untitled? Why?", "If we had one free afternoon outside Basel, where are we going?", "Is there anything at the Rubell we already recognize from our artist weeks?"],
         game: null
@@ -1268,7 +1227,7 @@ const phases = [
       {
         num: "Week 18", name: "Build your must-see list", tag: "app + artsy",
         vibe: "The exhibitor list drops in advance. This is the fun part — like building a playlist before a concert. Each of you marks your picks, then you compare.",
-        watch: ["Open Art Basel app — browse the exhibitor list when it drops", "artsy.net — search 'Art Basel Miami Beach' and browse past editions", "Each mark 5 booths you must see + 5 you're curious about — then compare lists"],
+        watch: ["Open Art Basel app — browse the exhibitor list when it drops", "<a href='https://www.artsy.net/fair/art-basel-miami-beach-2025' target='_blank' style='color:var(--gold)'>▶ Artsy — browse Art Basel Miami Beach past editions</a>", "Each mark 5 booths you must see + 5 you're curious about — then compare lists"],
         learn: [],
         discuss: ["Where do our lists overlap? Where are we completely different?", "Is there a gallery name that keeps coming up that we should know more about?", "What's our game plan for day one — which section do we hit first?"],
         game: null
